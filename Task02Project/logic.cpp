@@ -27,3 +27,18 @@
 // их сумма 1 + 2 + 4 + 8 + 16 + 32 + 64 + 127 + 254 + 508 + 1016 + 2032 + 4064 равна 8128.
 // 
 // И т.д.
+
+bool is_perfect_number(int number) {
+	int num = number / 2;
+	int sum = 1;
+
+	for (int divider = 0; divider < length; divider++)
+	{
+		if (number % divider == 0) {
+			sum += divider;
+	}
+
+	}
+	return sum == num;
+
+}

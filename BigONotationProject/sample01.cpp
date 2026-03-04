@@ -1,7 +1,7 @@
 ﻿// Максимальное количество операций (тиков процессора)?
-// Ответ:
+// Ответ:2
 // Алгоритмическая сложность решения в виде нотации большого О?
-// Ответ:
+// Ответ:о от 1
 #include<iostream>
 using namespace std;
 #define GRAMS_PER_KILOGRAM 1000
@@ -15,15 +15,5 @@ double convertTokilograms(long weight)
 double convertTotons(long weight)
 {
 	return weight / GRAMS_PER_TON;
-}
-int main() {
-	int weight = 9;
-
-	double kilo = convertTokilograms(weight);
-	double ton = convertTotons(weight);
-
-	cout << kilo << " " << ton << endl;
-
-	return 0;
 }
 
